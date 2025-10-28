@@ -72,7 +72,7 @@
 
 ### 10/27/25:
 * I learned how to add an background... but in my way!
-  *
+  * This is what 
 
 
 <!--
