@@ -72,7 +72,13 @@
 
 ### 10/27/25:
 * I learned how to add an background... but in my way!
-  * This is what 
+  * Before I reveal my own method, I hit a obstacle and that was the assets for backgrounds wouldn't load.
+``` js
+function preload ()
+{
+    this.load.image('sky', 'assets/sky.png');
+}
+```
 
 
 <!--
