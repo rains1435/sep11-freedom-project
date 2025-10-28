@@ -70,8 +70,9 @@
 ![canvas](ss/ll1.jpg)
 
 
-### X/X/XX:
-* Text
+### 10/27/25:
+* I learned how to add an background... but in my way!
+  *
 
 
 <!--
