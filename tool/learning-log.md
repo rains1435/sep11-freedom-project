@@ -72,13 +72,42 @@
 
 ### 10/27/25:
 * I learned how to add an background... but in my way!
-  * Before I reveal my own method, I hit a obstacle and that was the assets for backgrounds wouldn't load.
+  * Before I reveal my own method, I hit a obstacle and that was the assets for backgrounds wouldn't load
 ``` js
+// these aren't the exact example, I just took parts of the phaser code to use as example.
 function preload ()
 {
     this.load.image('sky', 'assets/sky.png');
 }
+
+function create ()
+{
+    this.add.image(400, 300, 'sky');
+}
 ```
+* **The issue:** I don't have the phaser assets folder downloaded into my html page. This means I'll have to create my own folder.
+* **The solution:** I created a directory/folder called `assets` in my `tool` parent directory. Then I downloaded a sky image online and put it into `assets`. Lastly...
+
+**My "Method":**
+``` js
+function preload ()
+{
+    this.load.image('sky', 'assets/sky.jpg');
+}
+
+// 'sky' = the name of the image
+// 'assets/sky.jpg' = access the assets folder then grabs the sky.jpg file
+
+function create ()
+{
+    let sky = this.add.image(400, 300, 'sky');
+    sky.setDisplaySize(800, 600);
+}
+// To summarize, the sky image is given a position of (400, 300) which is the center of the canvas. Then it is given the same size of the canvas so it is the background.
+```
+
+**Result:**
+
 
 
 <!--
