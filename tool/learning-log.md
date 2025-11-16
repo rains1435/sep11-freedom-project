@@ -118,11 +118,17 @@ function create ()
 function create()
 {
     platforms = this.physics.add.staticGroup();
-    platforms.create(400, 568, 'ground').setScale(1).refreshBody();
-    ground(650, 400);
-    ground(150, 250);
-    ground(700, 170);
+    platforms.create(400, 568, 'ground').setScale(2).refreshBody();
+    platforms.create(600, 400, 'ground');
+    platforms.create(50, 250, 'ground');
+    platforms.create(750, 220, 'ground');
 }
+```
+* I did some changes because the copied code didn't meet my expectations
+    * Only scaled the size of first platform shown in this code while the rest are just default; they're really big on my screen and I wanted to resize it.
+    * Plan: One big ground as the floor and 3 same sized platforms located differently
+``` js
+
 ```
 
 <!--
