@@ -112,8 +112,11 @@ function create ()
 ### 11/15/25
 * I found out how to add ACTUAL platforms to my canvas!
 * Here's where I went to get the starter code: [The Platforms](https://phaser.io/tutorials/making-your-first-phaser-3-game/part4)
-    * First I found an ground 2d image online, put it in my [assets](assets/ground.jpg) folder, and then preloaded it for use
-    * 
+    * First I found an ground 2d image online, put it in my [assets](assets/ground.jpg) folder, and then preloaded it for future use
+    * Then I pasted the starter code
+``` js
+
+```
 
 <!--
 * Links you used today (websites, videos, etc)
