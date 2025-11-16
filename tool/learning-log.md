@@ -126,7 +126,7 @@ function create()
 ```
 * `platforms = this.physics.add.staticGroup` = gives "platform" or a group of "platforms" collision and is completely immovable by any other external factors.
 * `.setScale(2)` = size scaling
-* `.refreshBody()`
+* `.refreshBody()` = updates the "platforms" collision hitbox so it fits the new size/ position
 * `platforms.create()` = create a "platform" and can give it (x, y) location + the preload name.
 * I did some changes because the copied code didn't meet my expectations
     * Only scaled the size of first platform shown in this code while the rest are just default; they're really big on my screen and I wanted to resize it.
@@ -134,22 +134,28 @@ function create()
 ``` js
 function create ()
 {
-    let platforms = this.physics.add.staticGroup();
+    let platforms = this.physics.add.staticGroup(); // Changes to variable; can prevent errors and more
 
-    platforms.create(400, 568, 'ground').refreshBody();
+    platforms.create(400, 568, 'ground').refreshBody(); // The ground; separate entity from the platforms code below it
 
+    // Since I want 3 platforms with same size, I created a function to refactor.
     function ground (x,y) {
-    return platforms.create(x, y, 'ground')
-        .setDisplaySize(300, 250)
+    return platforms.create(x, y, 'ground') // so each platform can have their own position
+        .setDisplaySize(300, 250) // hard-coded size = same size
         .refreshBody();
     }
 
+    // Calls ground function = same size but argument are different for position x,y
     ground(650, 400);
     ground(150, 250);
     ground(700, 170);
 }
 
 ```
+
+**Result:**
+![background](ss/ll2.jpg)
+
 
 <!--
 * Links you used today (websites, videos, etc)
