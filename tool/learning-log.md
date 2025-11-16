@@ -124,7 +124,10 @@ function create()
     platforms.create(750, 220, 'ground');
 }
 ```
-* `this.physics.add.staticGroup` = 
+* `platforms = this.physics.add.staticGroup` = gives "platform" or a group of "platforms" collision and is completely immovable by any other external factors.
+* `.setScale(2)` = size scaling
+* `.refreshBody()`
+* `platforms.create()` = create a "platform" and can give it (x, y) location + the preload name.
 * I did some changes because the copied code didn't meet my expectations
     * Only scaled the size of first platform shown in this code while the rest are just default; they're really big on my screen and I wanted to resize it.
     * Plan: One big ground as the floor and 3 same sized platforms located differently
