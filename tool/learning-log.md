@@ -113,9 +113,16 @@ function create ()
 * I found out how to add ACTUAL platforms to my canvas!
 * Here's where I went to get the starter code: [The Platforms](https://phaser.io/tutorials/making-your-first-phaser-3-game/part4)
     * First I found an ground 2d image online, put it in my [assets](assets/ground.jpg) folder, and then preloaded it for future use
-    * Then I pasted the starter code
+    * Then I pasted the starter codes into the create function
 ``` js
-
+function create()
+{
+    platforms = this.physics.add.staticGroup();
+    platforms.create(400, 568, 'ground').setScale(1).refreshBody();
+    ground(650, 400);
+    ground(150, 250);
+    ground(700, 170);
+}
 ```
 
 <!--
