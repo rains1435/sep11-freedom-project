@@ -109,7 +109,10 @@ function create ()
 **Result:**
 ![background](ss/ll2.jpg)
 
-
+### 11/15/25
+* I found out how to add ACTUAL platforms to my canvas!
+* Here's where I went to get the starter code: [The Platforms](https://phaser.io/tutorials/making-your-first-phaser-3-game/part4)
+    * First, I had
 
 <!--
 * Links you used today (websites, videos, etc)

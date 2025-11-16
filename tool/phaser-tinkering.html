@@ -48,6 +48,13 @@
                     width: 800,
                     height: 600,
                 },
+                physics: {
+                    default: 'arcade',
+                    arcade: {
+                        gravity: { y: 300 },
+                        debug: false
+                    }
+                },
 
                 scene: {
                     preload: preload,
@@ -61,13 +68,27 @@
             function preload ()
             {
                 this.load.image('sky', 'assets/sky.jpg');
+                this.load.image('ground', 'assets/ground.jpg');
             }
 
             function create ()
             {
-
                 let sky = this.add.image(400, 300, 'sky');
                 sky.setDisplaySize(800, 600);
+
+                let platforms = this.physics.add.staticGroup();
+
+                platforms.create(400, 568, 'ground').refreshBody();
+
+                function ground (x,y) {
+                    return platforms.create(x, y, 'ground')
+                        .setDisplaySize(300, 250)
+                        .refreshBody();
+                }
+
+                ground(650, 400);
+                ground(150, 250);
+                ground(700, 170);
             }
 
             function update ()
