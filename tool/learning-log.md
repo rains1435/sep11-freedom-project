@@ -156,6 +156,39 @@ function create ()
 **Result:**
 ![background](ss/ll3.jpg)
 
+### 11/23/25
+* The world seems alone so I added a sprite! (like a character, not the soda)
+    * Here's the [Phaser template](https://phaser.io/tutorials/making-your-first-phaser-3-game/part5), however I barely used this template to create my character besides copy the first four line of code on that page:
+
+    ``` js
+    let player = this.physics.add.sprite(350, 100, 'frog');
+    player.setScale(0.07).setBounce(0.2).setCollideWorldBounds(true);
+    // not on tutorial page; searched it up on google
+    this.physics.add.collider(player, platforms);
+    ```
+    * `this.physics.add.sprite(350, 100, 'frog');` = creates a frog character with physics
+    * `player.setScale(0.07).setBounce(0.2).setCollideWorldBounds(true);` = resized the wrong, add bounce to it when it lands, makes it collide with the bottom of the canvas
+    * `this.physics.add.collider(player, platforms);` = the frog can now collide with the platforms... HOWEVER
+* I ran into a problem with the platform and that is the transparent background image I used was a bad idea. The system registered the transparent background as part of collision so the frog was technically floating 5 feet above a platform.
+* So instead of panicking, I simply found the original image, cropped out the platform ONLY and replaced the old `ground.jpg`.
+* Also did some minor changes to size scaling which are pretty minor... but I did make the big floor a variable itself so whenever I change something about it, it doesn't affect other platforms.
+
+**Final code:**
+``` js
+// needed to be its own variable or mix up with the code can happen
+let floor = platforms.create(400, 568, 'ground').refreshBody();
+floor.setDisplaySize(800, 100);
+...
+// important part or the collision part
+let player = this.physics.add.sprite(350, 100, 'frog');
+player.setScale(0.07).setBounce(0.2).setCollideWorldBounds(true);
+this.physics.add.collider(player, platforms);
+// if I wanted to put my frog on one of the 3 floating platforms, i just enter the exact x-value of the platform and the y-value just a bit higher.
+
+```
+
+**Result:** When entering the page, he'll fall and land exactly there, with a little bit of bouncing
+![characterSprite](ss/ll4.jpg)
 
 <!--
 * Links you used today (websites, videos, etc)
