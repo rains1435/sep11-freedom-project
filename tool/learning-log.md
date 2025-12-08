@@ -190,6 +190,74 @@ this.physics.add.collider(player, platforms);
 **Result:** When entering the page, he'll fall and land exactly there, with a little bit of bouncing
 ![characterSprite](ss/ll4.jpg)
 
+### 12/7/25
+* My frog has too much potential energy so I decided to add controls to make him move!
+* Here's the [Phaser Template](https://phaser.io/tutorials/making-your-first-phaser-3-game/part7) I copied from but I also edited some of the code
+``` js
+function update () {
+    cursors = this.input.keyboard.createCursorKeys(); // lets phaser be aware to detect arrow keys
+    if (cursors.left.isDown) // left arrow
+    {
+        player.setVelocityX(-160); // speed when moving left
+
+        player.anims.play('left', true); // left moving animation
+    }
+    else if (cursors.right.isDown) // right arrow
+    {
+        player.setVelocityX(160); // speed when moving right
+
+        player.anims.play('right', true); // right moving animation
+    }
+    else
+    {
+        player.setVelocityX(0); // not moving; rest
+
+        player.anims.play('turn'); // rest animation
+    }
+
+    if (cursors.up.isDown && player.body.touching.down) // up arrow
+    {
+        player.setVelocityY(-330); // jumping
+    }
+}
+```
+* This code would completely turn my screen black and that issue was the local variables such as player nested EXCLUSIVELY to the create function thus anything in the update function with using player wouldn't work. Thus I created a global variable: `var player;` and deleted anything that is a variable in the create function; I also did this with cursor -> `var cursors` in global (outside of functions).
+* Now my screen isn't black and I could actually move around but looking close at console, I noticed that holding down the right, left, or even standing still will create a lot of error message: "missing animation". Then I realized that I don't have the phaser imported animations and so I removed animations.
+
+**Final Code:**
+
+``` js
+    // global variables so it's accessible/ can be used by functions
+    var cursors;
+    var player;
+    ...
+    // in function update, no more animations -> player.anims.play()
+    function update ()
+    {
+        cursors = this.input.keyboard.createCursorKeys();
+        if (cursors.left.isDown)
+        {
+            player.setVelocityX(-160);
+        }
+        else if (cursors.right.isDown)
+        {
+            player.setVelocityX(160);
+        }
+        else
+        {
+            player.setVelocityX(0);
+        }
+
+        if (cursors.up.isDown && player.body.touching.down)
+        {
+            player.setVelocityY(-330);
+        }
+    }
+```
+**Result:**
+
+https://github.com/user-attachments/assets/0777e99e-e276-4899-bb81-f8145c284bc2
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc

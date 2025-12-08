@@ -72,6 +72,8 @@
                 this.load.image('frog', 'assets/frog.jpg');
             }
 
+            var player;
+
             function create ()
             {
                 // background
@@ -95,13 +97,33 @@
                 ground(700, 170);
 
                 // character (sprite)
-                let player = this.physics.add.sprite(350, 100, 'frog');
+                player = this.physics.add.sprite(350, 100, 'frog');
                 player.setScale(0.07).setBounce(0.2).setCollideWorldBounds(true);
                 this.physics.add.collider(player, platforms);
             }
 
+            var cursors;
+
             function update ()
             {
+                cursors = this.input.keyboard.createCursorKeys();
+                if (cursors.left.isDown)
+                {
+                    player.setVelocityX(-160);
+                }
+                else if (cursors.right.isDown)
+                {
+                    player.setVelocityX(160);
+                }
+                else
+                {
+                    player.setVelocityX(0);
+                }
+
+                if (cursors.up.isDown && player.body.touching.down)
+                {
+                    player.setVelocityY(-330);
+                }
             }
         </script>
     </body>
