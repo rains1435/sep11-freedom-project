@@ -258,6 +258,45 @@ function update () {
 
 https://github.com/user-attachments/assets/0777e99e-e276-4899-bb81-f8145c284bc2
 
+### 12/14/25
+* The frog is lonely so let's add a friend (that can move; 2 player on one keyboard)
+    * I didn't go on the [**phaser**](https://phaser.io/) website... I searched up "WASD keyboard phaser" and got [**this**](https://phaser.discourse.group/t/wasd-keyboard-movement-phaser-3/8297/2#:~:text=Key%2C%20D%3A%20Key%20%7D-,var,-keys%20%3D%20this.input) <-- click this
+``` js
+// from website but I organized it
+var keys = this.input.keyboard.addKeys({
+    up: 'W',
+    left: 'A',
+    down: 'S',
+    right: 'D'
+});
+```
+* **READ IF NEEDED:** You'll have to add another global variables that works for the 2nd sprite (mines: `var player2;` & `var wasdKey;`) and also repeat what you did for frog in create function but change the variable label used so it functions (scroll up to **11/23/25** for collisions and physics in create)
+* Not much to explain for the code above but the `.addKeys` is important if you want to literally add keys to which you can modify its function when clicked as **shown below:**
+
+``` js
+if (wasdKey.left.isDown)
+{
+    player2.setVelocityX(-160);
+}
+else if (wasdKey.right.isDown)
+{
+    player2.setVelocityX(160);
+}
+else
+{
+    player2.setVelocityX(0);
+}
+
+if (wasdKey.up.isDown && player2.body.touching.down)
+{
+    player2.setVelocityY(-330);
+}
+```
+
+**Result:**
+
+https://github.com/user-attachments/assets/5a6ff262-ffc7-402c-858b-4217c9dce4bf
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc

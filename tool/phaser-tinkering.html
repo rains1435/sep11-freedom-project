@@ -70,9 +70,13 @@
                 this.load.image('sky', 'assets/sky.jpg');
                 this.load.image('ground', 'assets/ground.jpg');
                 this.load.image('frog', 'assets/frog.jpg');
+                this.load.image('boy', 'assets/boy.jpg');
             }
 
-            var player;
+            var player1;
+            var player2;
+            var cursors;
+            var wasdKey;
 
             function create ()
             {
@@ -97,32 +101,65 @@
                 ground(700, 170);
 
                 // character (sprite)
-                player = this.physics.add.sprite(350, 100, 'frog');
-                player.setScale(0.07).setBounce(0.2).setCollideWorldBounds(true);
-                this.physics.add.collider(player, platforms);
+                // frog (player1)
+                player1 = this.physics.add.sprite(350, 400, 'frog');
+                player1.setScale(0.07).setBounce(0.2).setCollideWorldBounds(true);
+                this.physics.add.collider(player1, platforms);
+
+                // boy (player2)
+                player2 = this.physics.add.sprite(250, 400, 'boy');
+                player2.setScale(0.2).setBounce(0.2).setCollideWorldBounds(true);
+                this.physics.add.collider(player2, platforms);
+
+
             }
 
-            var cursors;
+
 
             function update ()
             {
+                // arrow keys movement (frog,player1)
                 cursors = this.input.keyboard.createCursorKeys();
                 if (cursors.left.isDown)
                 {
-                    player.setVelocityX(-160);
+                    player1.setVelocityX(-160);
                 }
                 else if (cursors.right.isDown)
                 {
-                    player.setVelocityX(160);
+                    player1.setVelocityX(160);
                 }
                 else
                 {
-                    player.setVelocityX(0);
+                    player1.setVelocityX(0);
                 }
 
-                if (cursors.up.isDown && player.body.touching.down)
+                if (cursors.up.isDown && player1.body.touching.down)
                 {
-                    player.setVelocityY(-330);
+                    player1.setVelocityY(-330);
+                }
+                // WASD keys movement (boy,player2)
+                wasdKey = this.input.keyboard.addKeys({
+                    up: 'W',
+                    down: 'S',
+                    right: 'D',
+                    left: 'A'
+                });
+                if (wasdKey.left.isDown)
+                {
+                    player2.setVelocityX(-160);
+                }
+                else if (wasdKey.right.isDown)
+                {
+                    player2.setVelocityX(160);
+                }
+                else
+                {
+                    player2.setVelocityX(0);
+                }
+
+                if (wasdKey.up.isDown && player2.body.touching.down)
+                {
+                    player2.setVelocityY(-330);
                 }
             }
         </script>
