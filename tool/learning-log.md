@@ -295,6 +295,8 @@ if (wasdKey.up.isDown && player2.body.touching.down)
 
 **Result:**
 
+*the boy sprite is the WASD movement*
+
 https://github.com/user-attachments/assets/5a6ff262-ffc7-402c-858b-4217c9dce4bf
 
 <!--
