@@ -48,6 +48,10 @@ this.physics.add.collider(player, platforms); // collision between the frog and 
 
 Struggle: there was an issue with the way the platform image was originally and that was it had extra space around it. This made collision a little weird because the frog would be a few feet up from the actual platform. Simply, I cropped the platform image. Also the ground platform (separate) needed to be its own variable or else mix up can happen between ACTUAL platforms and the ground platform: `let floor = platforms.create(400, 568, 'ground').refreshBody(); floor.setDisplaySize(800, 100);`
 
+**RESULT:**
+
+![ll4](../tool/ss/ll4.jpg)
+
 ### Sprite Movement
 A world without movement would be lifeless so I gave the frog the ability to move around but with a twist... it is controlled by the user via the arrow keys.
 ```js
@@ -111,6 +115,10 @@ This wouldn't work and here's why
         }
     }
 ```
+
+**RESULT:**
+
+https://github.com/user-attachments/assets/0777e99e-e276-4899-bb81-f8145c284bc2
 
 ## Winter Goals
 
