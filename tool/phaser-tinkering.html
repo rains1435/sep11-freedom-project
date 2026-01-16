@@ -121,10 +121,10 @@
                 });
 
                 coins.children.iterate(function (child) {
-
+                    child.setScale(0.1);
                     child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
-
                 });
+                this.physics.add.collider(coins, platforms);
 
             }
 
