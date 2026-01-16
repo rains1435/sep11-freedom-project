@@ -307,16 +307,19 @@ https://github.com/user-attachments/assets/5a6ff262-ffc7-402c-858b-4217c9dce4bf
 ``` js
 // Copied from Template but modified since I wanted coins (google texture not phaser's)
 
+// Section 1
 coins = this.physics.add.group({
     key: 'coins',
     repeat: 4,
     setXY: { x: 12, y: 0, stepX: 70 }
 });
 
+// Section 2
 coins.children.iterate(function (child) {
     child.setScale(0.1);
 });
 
+// Section 3
 function collectCoin (player1, coins)
 {
     coins.disableBody(true, true);
@@ -326,6 +329,7 @@ this.physics.add.collider(coins, platforms);
 this.physics.add.overlap(player1, coins, collectCoin, null, this);
 this.physics.add.overlap(player2, coins, collectCoin, null, this);
 ```
+* Section 1 is basically the coin spawner
 
 <!--
 * Links you used today (websites, videos, etc)
