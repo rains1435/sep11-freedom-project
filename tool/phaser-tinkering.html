@@ -77,6 +77,7 @@
             var player2;
             var cursors;
             var wasdKey;
+            var coins;
 
             function create ()
             {
@@ -111,6 +112,7 @@
                 player2.setScale(0.2).setBounce(0.2).setCollideWorldBounds(true);
                 this.physics.add.collider(player2, platforms);
 
+                // coins (collect)
 
             }
 
