@@ -115,7 +115,10 @@
 
                 // coins (collectable)
                 coins = this.physics.add.group();
-                coins
+                function coins(x,y){
+                    return coins.create(x, y, 'coin');
+                }
+                
 
                 coins.children.iterate(function (child) {
                     child.setScale(0.1);
