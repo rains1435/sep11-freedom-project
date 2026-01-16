@@ -112,7 +112,12 @@
                 player2.setScale(0.2).setBounce(0.2).setCollideWorldBounds(true);
                 this.physics.add.collider(player2, platforms);
 
-                // coins (collect)
+                // coins (collectable)
+                coins = this.physics.add.group({
+                    key: 'coins',
+                    repeat: 11,
+                    
+                })
 
             }
 
