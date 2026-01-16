@@ -124,8 +124,14 @@
                     child.setScale(0.1);
                     child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
                 });
-                this.physics.add.collider(coins, platforms);
 
+                function collectStar (player1, coins)
+                {
+                    coins.disableBody(true, true);
+                }
+
+                this.physics.add.collider(coins, platforms);
+                this.physics.add.overlap(player1, coins, collectStar, null, this);
             }
 
 
