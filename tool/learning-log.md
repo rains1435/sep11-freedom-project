@@ -336,6 +336,7 @@ this.physics.add.overlap(player2, coins, collectCoin, null, this);
   * `this.physics.add.overlap(player1, coins, collectCoin, null, this);` = when frog or a coin(s) overlap with each other, it will activate collectCoin to `coins.disableBody(true, true)` which makes the coin DISAPPEAR or in this case, collected.
 
 **Result:**
+
 https://github.com/user-attachments/assets/7c8db2b5-4f7f-4a0a-8cbb-a50fa08b5018
 
 
