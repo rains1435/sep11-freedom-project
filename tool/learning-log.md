@@ -329,9 +329,13 @@ this.physics.add.collider(coins, platforms);
 this.physics.add.overlap(player1, coins, collectCoin, null, this);
 this.physics.add.overlap(player2, coins, collectCoin, null, this);
 ```
-* Section 1 is basically the coin spawner. It takes the texture of the coin, spawns it and repeats it 4 more times (5 coins), spaced 70 X-distance between each other
+* Section 1 is basically the coin spawner.
+  * It takes the texture of the coin, spawns it and repeats it 4 more times (5 coins), spaced 70 X-distance between each other
 * Section 2 is to scale the coins to a smaller size because they were huge before scaled
-* Section 3 gave coins collision relationship with the platforms and also allowed both sprites, the frog and the boy, to collect the coins
+* Section 3 gave coins collision relationship with the platforms and also allowed both sprites, the frog and the boy, to collect the coins.
+  * `this.physics.add.overlap(player1, coins, collectCoin, null, this);` = when frog or a coin(s) overlap with each other, it will activate collectCoin to `coins.disableBody(true, true)` which makes the coin DISAPPEAR or in this case, collected.
+
+
 
 <!--
 * Links you used today (websites, videos, etc)
