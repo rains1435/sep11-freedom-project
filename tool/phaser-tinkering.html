@@ -132,6 +132,7 @@
 
                 this.physics.add.collider(coins, platforms);
                 this.physics.add.overlap(player1, coins, collectStar, null, this);
+                this.physics.add.overlap(player2, coins, collectStar, null, this);
             }
 
 
