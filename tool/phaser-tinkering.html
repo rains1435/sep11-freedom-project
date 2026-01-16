@@ -116,15 +116,12 @@
                 // coins (collectable)
                 coins = this.physics.add.group();
 
-                function coinsCr(x,y){
-                    return coins.create(x, y, 'coins');
+                function coinsSpawn(x, y, count, spacing){
+                    for(var i = 0; i < count; i++){
+                        coins.create(x + i*spacing, y, 'coins' );
+                    }
                 }
-                coinsCr(20, 210);
-                coinsCr(70, 210);
-                coinsCr(120, 210);
-                coinsCr(170, 210);
-                coinsCr(220, 210);
-                coinsCr(270, 210);
+                coinsSpawn(20, 210, 6, 50);
 
 
                 coins.children.iterate(function (child) {
