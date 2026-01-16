@@ -320,7 +320,7 @@ coins.children.iterate(function (child) {
 });
 
 // Section 3
-function collectCoin (player1, coins)
+function collectCoin (player, coins)
 {
     coins.disableBody(true, true);
 }
