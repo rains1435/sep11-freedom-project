@@ -116,15 +116,14 @@
                 // coins (collectable)
                 coins = this.physics.add.group();
 
-                function coins(x,y){
+                function coinsCr(x,y){
                     return coins.create(x, y, 'coins');
                 }
-                coins(160, 50);
+                coinsCr(160, 210);
 
 
                 coins.children.iterate(function (child) {
                     child.setScale(0.1);
-                    child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
                 });
 
                 function collectCoin (player1, coins)
