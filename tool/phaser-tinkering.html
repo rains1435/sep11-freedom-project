@@ -115,7 +115,7 @@
 
                 // coins (collectable)
                 coins = this.physics.add.group();
-                
+
                 function coins(x,y){
                     return coins.create(x, y, 'coins');
                 }
@@ -127,14 +127,14 @@
                     child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
                 });
 
-                function collectStar (player1, coins)
+                function collectCoin (player1, coins)
                 {
                     coins.disableBody(true, true);
                 }
 
                 this.physics.add.collider(coins, platforms);
-                this.physics.add.overlap(player1, coins, collectStar, null, this);
-                this.physics.add.overlap(player2, coins, collectStar, null, this);
+                this.physics.add.overlap(player1, coins, collectCoin, null, this);
+                this.physics.add.overlap(player2, coins, collectCoin, null, this);
             }
 
 
