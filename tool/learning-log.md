@@ -331,7 +331,7 @@ this.physics.add.overlap(player2, coins, collectCoin, null, this);
 ```
 * Section 1 is basically the coin spawner. It takes the texture of the coin, spawns it and repeats it 4 more times (5 coins), spaced 70 X-distance between each other
 * Section 2 is to scale the coins to a smaller size because they were huge before scaled
-* Section 3 allowed both the frog and boy collect the coins 
+* Section 3 gave coins collision relationship with the platforms and also allowed both sprites, the frog and the boy, to collect the coins
 
 <!--
 * Links you used today (websites, videos, etc)
