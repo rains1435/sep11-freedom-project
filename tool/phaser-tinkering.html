@@ -114,10 +114,11 @@
                 this.physics.add.collider(player2, platforms);
 
                 // coins (collectable)
-                coins = this.physics.add.group();
-
-
-
+                coins = this.physics.add.group({
+                    key: 'coins',
+                    repeat: 4,
+                    setXY: { x: 12, y: 0, stepX: 70 }
+                });
 
                 coins.children.iterate(function (child) {
                     child.setScale(0.1);
