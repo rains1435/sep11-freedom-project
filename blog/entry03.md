@@ -83,7 +83,15 @@ this.physics.add.overlap(player2, coins, collectCoin, null, this);
 * Section 2 will scale the coins to a reasonably small size so it doesn't take up the whole screen
 * Section 3 makes coins collidable with other things (sprites and the platforms). The function above the `.physics` makes it that the sprite can now pass through the coin and when they do pass through the coin, the coin disappears/ is collected which is why there's `.disableBody`
 
+## What's next for Phaser?
+It's very simple and I already have it planned it out
+* **#1**: Learn how to make a score system with the connections with coins
+* **#2**: TRY to learn how to create a unlockable (keys unlock locks)
+* **#3**: TRY to learn animations (sprite sheets)
+* **#4**: Learn how to make a death system (touch something, sprite dies)
+* **#5**: Learn how to make levels that are connected
 
+## WINTER BREAK GOALS CHECK-UP
 
 [Previous](entry02.md) | [Next](entry04.md)
 
