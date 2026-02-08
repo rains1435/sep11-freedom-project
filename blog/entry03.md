@@ -86,12 +86,17 @@ this.physics.add.overlap(player2, coins, collectCoin, null, this);
 ## What's next for Phaser?
 It's very simple and I already have it planned it out
 * **#1**: Learn how to make a score system with the connections with coins
-* **#2**: TRY to learn how to create a unlockable (keys unlock locks)
-* **#3**: TRY to learn animations (sprite sheets)
-* **#4**: Learn how to make a death system (touch something, sprite dies)
-* **#5**: Learn how to make levels that are connected
+* **#2**: TRY to learn how to create a unlockable (keys unlock locks to escape)
+* **#3**: TRY to learn animations (sprite sheets/animation frames)
+* **#4**: Learn how to make a death system (touch something, sprite dies ... maybe a monster? Tag type of game?)
+* **#5**: Learn how to make levels that are connected (Complete level 1 and it takes you to level 2 and so on)
 
 ## WINTER BREAK GOALS CHECK-UP
+* My first goal was to create collectables which I achieved (POINT SYSTEM W.I.P)
+* My second goal was to create a mini project and sadly I didn't complete or even started but when I learn everything I'll need to know, there will be a big surprise at the end of the year
+* My third goal was to brainstorm ways for my final game which I achieved (I will share on 5th bullet point)
+* My fourth goal was to communicate with Xin Yu to help him out but I didn't even need to because he's back into business
+* My fifth goal was to conduct a survey on boredom and logical games and I completed it
 
 [Previous](entry02.md) | [Next](entry04.md)
 
