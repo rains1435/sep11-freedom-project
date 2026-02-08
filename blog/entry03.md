@@ -108,7 +108,7 @@ I am OFFICIALLY finished with the 2nd step, **Research the problem** and I am mo
 ## Skills
 
 ### Consideration
-Similar to blog 2, brainstorming game ideas based off other's responses on the survey takes some level of consideration. 
+Similar to blog 2, brainstorming game ideas based off other's responses on the survey takes some level of consideration. This basically means I need to make a game that meets what I see is most needed. In this context, they wanted a game that looks well made visually and progressive which implies they want a game that appeals to their eyes and that there are levels which can keep them engaged in whatever they're doing. A concern of mine when considering the 'better visuals' is that I'm not sure if I can make the game look like it came straight out of the gates of heaven but I should prioritize the functionality of the game first before I design to the best of my ability.
 
 ### Problem decomposition
 
