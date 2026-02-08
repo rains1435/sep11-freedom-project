@@ -107,7 +107,10 @@ I am OFFICIALLY finished with the 2nd step, **Research the problem** and I am mo
 
 ## Skills
 
-###
+### Consideration
+Similar to blog 2, brainstorming game ideas based off other's responses on the survey takes some level of consideration. 
+
+### Problem decomposition
 
 
 [Previous](entry02.md) | [Next](entry04.md)
