@@ -107,6 +107,8 @@ I am OFFICIALLY finished with the 2nd step, **Research the problem** and I am mo
 
 ## Skills
 
+###
+
 
 [Previous](entry02.md) | [Next](entry04.md)
 
