@@ -43,7 +43,7 @@ if (wasdKey.up.isDown && player2.body.touching.down)
     player2.setVelocityY(-330);
 }
 ```
-* Section 1 identifies key inputs or in order words, WASD = up, left, down, right
+* Section 1 identifies key inputs or in order words, WASD = `up, left, down, right`
 * Section 2 puts those identified key inputs into action by giving them velocity or movement speed on each key input
 
 
@@ -110,8 +110,11 @@ I am OFFICIALLY finished with the 2nd step, **Research the problem** and I am mo
 ### Consideration
 Similar to blog 2, brainstorming game ideas based off other's responses on the survey takes some level of consideration. This basically means I need to make a game that meets what I see is most needed. In this context, they wanted a game that looks well made visually and progressive which implies they want a game that appeals to their eyes and that there are levels which can keep them engaged in whatever they're doing. A concern of mine when considering the 'better visuals' is that I'm not sure if I can make the game look like it came straight out of the gates of heaven but I should prioritize the functionality of the game first before I design to the best of my ability.
 
-### Problem decomposition
+### Creativity
+Like I've said: *I've got a few ideas on the game I am going to create*. If my goal is set in stone, it's a tendency to make a game unlike any others, while matching what the survey shows. I would say that brainstorming a game requires a GREAT amount of creativity and orginality (**it's fine if it's a little bit unoriginal**). For such a bold claim, it is true since there are MILLIONS of games out there and considering the copy-and-paste games, IT'S STILL A LOT OF DIFFERENT GAME IDEAS OUT THERE. So whenever I think of a game, I have to think about the millions of genre/ideas that have already been taken which can be really hard if you're like a slow thinker like me. The point is creativity is a very difficult skill to come across because you can have all the knowledge in the world but without an original idea, you will just be a robot going off what you're programmed.
 
+## Next Step
+When I am done brainstorming all my ideas, the next step will be to choose one of the ideas or STEP 4: **Plan the most promising solution**. That one idea will grow and grow through proper planning and eventually it will become a game which is 2-3 steps away. I am happy to share what I've got in the next episode of RAIN'S BRAIN BOGGLING BLOGS.
 
 [Previous](entry02.md) | [Next](entry04.md)
 
