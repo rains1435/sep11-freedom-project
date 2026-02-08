@@ -98,8 +98,9 @@ It's very simple and I already have it planned it out
 * My fourth goal was to communicate with Xin Yu to help him out but I didn't even need to because he's back into business
 * My fifth goal was to conduct a survey on boredom and logical games and I completed it
     * There are 50 people who took the survey and 39 out of 50 people chose that they wanted a logical game with "Reward / Progress" and "Fun visuals / themes"
+![survey](ss/third.png)
 
-    
+
 
 [Previous](entry02.md) | [Next](entry04.md)
 
