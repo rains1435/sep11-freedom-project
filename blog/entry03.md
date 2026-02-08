@@ -103,7 +103,7 @@ It's very simple and I already have it planned it out
 ---
 
 ## Engineering Design Process (EDP)
-I am OFFICIALLY finished with the 2nd step, **Research the problem** and I am moving onto the 3rd, **Brainstorm possible solutions**. Based on the survey, majority of the respondent are often bored and use games to deal with it which sets up the next pieces of data. Majority has also played logical types of games with most having positive feedbacks
+I am OFFICIALLY finished with the 2nd step, **Research the problem** and I am moving onto the 3rd, **Brainstorm possible solutions**. Based on the survey, majority of the respondent are often bored and use games to deal with it which sets up the next pieces of data. Majority has also played logical types of games with most having positive feedbacks but they want more and thus majority also chose better look for the game and rewarding/progressing (which implies levels). Overall, I'm brainstorming of a game that fits those needs and I do have an idea: A 
 
 
 [Previous](entry02.md) | [Next](entry04.md)
