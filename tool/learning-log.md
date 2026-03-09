@@ -344,8 +344,28 @@ https://github.com/user-attachments/assets/7c8db2b5-4f7f-4a0a-8cbb-a50fa08b5018
     * Here's the [**Phaser Template**](https://phaser.io/tutorials/making-your-first-phaser-3-game/part9)
 
 ``` js
+var score = 0;
+var scoreText;
 
+function create ()
+{
+    // a score visual that pops up in the corner of your canvas
+    scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
+    // you're adding onto an already existing function that I previously made (the log above this one)
+    function collectCoin (player1, coins)
+    {
+        coins.disableBody(true, true);
+
+        score += 10;
+        scoreText.setText('Score: ' + score);
+    }
+}
 ```
+* So basically in addition to making the coin disappear when a sprite/player collides with it, it will add plus a certain amount of score onto the score text in the corner of the canvas.
+    * `score += 10;` will add 10 points to the score variable when `player1` and `coins` collide
+    * `scoreText.setText('Score: ' + score);` will display the new score value after 10 points has been added (visual)
+    * Also the coin disappears if collided with. Combined with the addition of scores, it will make the world less boring to the user!
+
 
 
 <!--

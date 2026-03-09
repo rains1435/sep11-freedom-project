@@ -117,7 +117,7 @@
                 this.physics.add.collider(player2, platforms);
                 */
 
-                // coins (collectable)
+                // coins (collectable) / score system
                 coins = this.physics.add.group({
                     key: 'coins',
                     repeat: 4,
@@ -127,6 +127,8 @@
                 coins.children.iterate(function (child) {
                     child.setScale(0.1);
                 });
+
+                scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
 
                 function collectCoin (player1, coins)
                 {
@@ -140,8 +142,6 @@
                 this.physics.add.overlap(player1, coins, collectCoin, null, this);
                 // this.physics.add.overlap(player2, coins, collectCoin, null, this);
 
-                // score system
-                scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
             }
 
 
