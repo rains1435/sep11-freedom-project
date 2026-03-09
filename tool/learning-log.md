@@ -303,7 +303,7 @@ https://github.com/user-attachments/assets/5a6ff262-ffc7-402c-858b-4217c9dce4bf
 ### 1/15/26
 * The world still looks boring so I added something that can be collected: **COINS!!!**
   * Here's the [**Phaser Template**](https://phaser.io/tutorials/making-your-first-phaser-3-game/part8)
- 
+
 ``` js
 // Copied from Template but modified since I wanted coins (google texture not phaser's)
 
@@ -338,6 +338,9 @@ this.physics.add.overlap(player2, coins, collectCoin, null, this);
 **Result:**
 
 https://github.com/user-attachments/assets/7c8db2b5-4f7f-4a0a-8cbb-a50fa08b5018
+
+### 3/8/26
+* 
 
 
 <!--
