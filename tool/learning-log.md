@@ -340,7 +340,12 @@ this.physics.add.overlap(player2, coins, collectCoin, null, this);
 https://github.com/user-attachments/assets/7c8db2b5-4f7f-4a0a-8cbb-a50fa08b5018
 
 ### 3/8/26
-* 
+* The world finally looks alive! BUT I think the user wants a point system...
+    * Here's the [**Phaser Template**](https://phaser.io/tutorials/making-your-first-phaser-3-game/part9)
+
+``` js
+
+```
 
 
 <!--
