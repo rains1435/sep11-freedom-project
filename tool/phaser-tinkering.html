@@ -109,9 +109,11 @@
                 this.physics.add.collider(player1, platforms);
 
                 // boy (player2)
+                /*
                 player2 = this.physics.add.sprite(250, 400, 'boy');
                 player2.setScale(0.2).setBounce(0.2).setCollideWorldBounds(true);
                 this.physics.add.collider(player2, platforms);
+                */
 
                 // coins (collectable)
                 coins = this.physics.add.group({
@@ -131,7 +133,7 @@
 
                 this.physics.add.collider(coins, platforms);
                 this.physics.add.overlap(player1, coins, collectCoin, null, this);
-                this.physics.add.overlap(player2, coins, collectCoin, null, this);
+                // this.physics.add.overlap(player2, coins, collectCoin, null, this);
             }
 
 
@@ -158,6 +160,7 @@
                     player1.setVelocityY(-330);
                 }
                 // WASD keys movement (boy,player2)
+                /*
                 wasdKey = this.input.keyboard.addKeys({
                     up: 'W',
                     down: 'S',
@@ -181,6 +184,7 @@
                 {
                     player2.setVelocityY(-330);
                 }
+                */
             }
         </script>
     </body>
