@@ -55,11 +55,12 @@ That's all the major things I've learned using Phaser! Thanks! now let's move on
 
 ## MVP Progress
 
-The score and death system are progress of MVP. Why? Just look at my long plan... Well I am not going to copy and paste it here so just click on this link -> [HERE](../../our-first-game/plan.md)
+The score and death system are progress of MVP. Why? Just look at my long plan... Well I am not going to copy and paste it here so just click on this link -> [**HERE**](../../our-first-game/plan.md)
 
 I made one change to the plan and that is I am removing the dates of which we have to do each part of the MVP. Reason is that I AM VERY BUSY WITH SCHOOL. Setting these deadlines is putting more pressure on me and I don't want to stress about it constantly. New plan is that me and my partner Xin Yu will learn everything we need for the MVP based on the plan on our own time but NO PROCRASINATING. It seems like this plan is working better because I've already learned how to make a score and death system which meets 2 of our major game MVP parts.
 
-
+**TIP:** WATCH YOUTUBE VIDEOS ON HOW TO BE A BETTER TIME MANAGER. FOR EXAMPLE, I HAVE ADHD SO I WATCHED VIDEOS LIKE -> [**How To Power Through ADHD: Proven Strategies to Crush Tough Tasks**
+](https://www.youtube.com/watch?v=yj6_1t1PAcE) or [**How To Master Time Management – ADHD Skills Part 1**](https://www.youtube.com/watch?v=fWRF6BJ1OQk)
 
 ## Engineering Design Process
 I sped through the 3rd step: **Brainstorm possible solutions** and sped through step 4: **Plan the most promising solution**. Currently, I can confidently say that we are in between step 4 and 5: **Create a prototype**. What this means is we are still planning/learning what we need to do to meet our MVP requirements but also 'creating' the prototype; I am testing things out behind the scenes with Phaser.
@@ -72,6 +73,8 @@ Since I have a partner for this team project, I've gotten WAY better with commun
 ### Time Management + Growth Mindset
 For some context before I begin explaining, I am currently under a lot of stress from the responsibility of school and other personal issues. Now do I really want to spiral deeper into the rabbit hole or do I want escape? It's not possible to escape it though... but I can relieve some stress to lift myself somewhat upwards. This is possible through managing my schedule for work and keeping a strong mindset. Remember how I talked about the adjustment I made on my MVP plan? Yeah I used time management to relieve stress and for me to do this is a sign that I am trying to grow a better mindset and not bury myself in deadline stress. New plan is to work at my own pace but not overly relaxed since there's an ACTUAL deadline. The new mindset I've built for myself is really helping me deal with all the other external stressors. The lesson is that like an equilibrium under stress, adjust until you reach equilibrium even if it might feel different (Chemistry reference).
 
+
+## Next Step
 
 
 [Previous](entry03.md) | [Next](entry05.md)
