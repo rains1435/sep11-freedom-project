@@ -60,7 +60,14 @@ The score and death system are progress of MVP. Why? Just look at my long plan..
 I made one change to the plan and that is I am removing the dates of which we have to do each part of the MVP. Reason is that I AM VERY BUSY WITH SCHOOL. Setting these deadlines is putting more pressure on me and I don't want to stress about it constantly. New plan is that me and my partner Xin Yu will learn everything we need for the MVP based on the plan on our own time but NO PROCRASINATING. It seems like this plan is working better because I've already learned how to make a score and death system which meets 2 of our major game MVP parts.
 
 ## Engineering Design Process
+I sped through the 3rd step: **Brainstorm possible solutions** and sped through step 4: **Plan the most promising solution**. Currently, I can confidently say that we are in between step 4 and 5: **Create a prototype**. What this means is we are still planning/learning what we need to do to meet our MVP requirements but also 'creating' the prototype; I am testing things out behind the scenes with Phaser.
 
+## Skills
+
+### Communication
+Since I have a partner for this team project, I've gotten WAY better with communicating. I tell my partner everything about my plan or he tells me what he is thinking about. I feel like without communication, it will be very hard to know what your partner needs or wants. For example, if my partner wants a very cool looking character but isn't communicating with me, I can't accommodate for him/her or figure something out. It's about creating a connection while also keeping it professional. It's like that one advice: "Communication is key" so for my future self, a team needs connections, not disconnection.
+
+### 
 
 
 
