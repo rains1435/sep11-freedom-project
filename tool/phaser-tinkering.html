@@ -83,6 +83,7 @@
             var score = 0;
             var scoreText;
             var spikes;
+            var spikeCreate;
 
             function create ()
             {
@@ -152,8 +153,8 @@
 
                 // death system
                 spikes = this.physics.add.staticGroup();
-                var spike = spikes.create(200, 210, 'spikes');
-                spike.setScale(0.4).refreshBody();
+                spikeCreate = spikes.create(200, 210, 'spikes');
+                spikeCreate.setScale(0.4).refreshBody();
                 this.physics.add.overlap(player1, spikes, function() {
                     player1.setPosition(350, 400);
                     score = 0;
