@@ -160,6 +160,7 @@
                     score = 0;
                     scoreText.setText('Score: 0');
                 }, null, this);
+                cursors = this.input.keyboard.createCursorKeys();
             }
 
 
@@ -167,7 +168,6 @@
             function update ()
             {
                 // arrow keys movement (frog,player1)
-                cursors = this.input.keyboard.createCursorKeys();
                 if (cursors.left.isDown)
                 {
                     player1.setVelocityX(-160);
