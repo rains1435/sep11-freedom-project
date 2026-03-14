@@ -72,6 +72,7 @@
                 this.load.image('frog', 'assets/frog.jpg');
                 this.load.image('boy', 'assets/boy.jpg');
                 this.load.image('coins', 'assets/coins.jpg');
+                this.load.image('spikes', 'assets/spikes.jpg);
             }
 
             var player1;
@@ -149,19 +150,6 @@
                 // this.physics.add.overlap(player2, coins, collectCoin, null, this);
 
                 // death system
-                bombs = this.physics.add.group();
-                this.physics.add.collider(bombs, platforms);
-                {
-                    this.physics.pause();
-
-                    player.setTint(0xff0000);
-
-                    player.anims.play('turn');
-
-                    gameOver = true;
-                }
-                this.physics.add.collider(bombs, platforms);
-                this.physics.add.collider(player, bombs, hitBomb, null, this);
 
             }
 
