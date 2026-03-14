@@ -150,7 +150,13 @@
                 // this.physics.add.overlap(player2, coins, collectCoin, null, this);
 
                 // death system
-
+                let spikes = this.physics.add.staticGroup();
+                let spike = spikes.create(400, 540, 'spikes');
+                this.physics.add.overlap(player1, spikes, function() {
+                    player1.setPosition(350, 400);
+                    score = 0;
+                    scoreText.setText('Score: 0');
+                }, null, this);
             }
 
 
