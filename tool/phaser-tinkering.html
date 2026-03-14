@@ -118,20 +118,11 @@
                 */
 
                 // coins (collectable) / score system
-                coins = this.physics.add.group
-                function coinsSpawn(x, y, count, spacing){
-                    for(var i = 0; i < count; i++){
-                        coins.create(x + i*spacing, y, 'coins' );
-                    }
-                }
-                coinsSpawn(20, 210, 6, 50);
-                coinsSpawn(530, 360, 6, 50);
-                coinsSpawn(580, 130, 5, 50);
-                // coins = this.physics.add.group({
-                //     key: 'coins',
-                //     repeat: 4,
-                //     setXY: { x: 12, y: 0, stepX: 70 }
-                // });
+                coins = this.physics.add.group({
+                    key: 'coins',
+                    repeat: 4,
+                    setXY: { x: 12, y: 0, stepX: 70 }
+                });
 
                 coins.children.iterate(function (child) {
                     child.setScale(0.1);
