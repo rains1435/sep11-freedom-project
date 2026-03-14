@@ -27,7 +27,7 @@ function create ()
 
 The score system is like an add-on to the code that collects coins. So the function `collectCoin` runs as so: When player collides with a coin, the coin's body is disabled/disappears and it add +10 to the score board displayed via `.setText('Score: ' + score)`.
 
-
+![coin](ss/fourth.png)
 
 ### Death System
 Well this one was much more difficult to make. Originally, I visited the Phaser site to search for it. In the "Making your first Phaser 3 game", there was the "[Bouncing Bombs](https://phaser.io/tutorials/making-your-first-phaser-3-game/part10)" part and although it had a death system, it was not what I was looking for because their "death" subject was a bomb that MOVED (I wanted a static spike) and the "game over" death (I wanted a respawn death). So after spending 30 minutes of my life of trying to figure out a way to make a death system that respawns via collision with spikes, **here's what I made:**
