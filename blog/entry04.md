@@ -27,7 +27,7 @@ function create ()
 
 The score system is like an add-on to the code that collects coins. So the function `collectCoin` runs as so: When player collides with a coin, the coin's body is disabled/disappears and it add +10 to the score board displayed via `.setText('Score: ' + score)`.
 
-### Death system
+### Death System
 
 
 [Previous](entry03.md) | [Next](entry05.md)
