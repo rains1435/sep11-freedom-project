@@ -152,14 +152,13 @@
 
                 // death system
                 spikes = this.physics.add.staticGroup();
-                var spike = spikes.create(400, 540, 'spikes');
-                spike.setDisplaySize(800, 20).refreshBody();
+                var spike = spikes.create(200, 210, 'spikes');
+                spike.setScale(0.4).refreshBody();
                 this.physics.add.overlap(player1, spikes, function() {
                     player1.setPosition(350, 400);
                     score = 0;
                     scoreText.setText('Score: 0');
                 }, null, this);
-                cursors = this.input.keyboard.createCursorKeys();
             }
 
 
@@ -167,6 +166,7 @@
             function update ()
             {
                 // arrow keys movement (frog,player1)
+                cursors = this.input.keyboard.createCursorKeys();
                 if (cursors.left.isDown)
                 {
                     player1.setVelocityX(-160);
