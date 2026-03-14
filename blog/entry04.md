@@ -75,6 +75,7 @@ For some context before I begin explaining, I am currently under a lot of stress
 
 
 ## Next Step
+ALL I HAVE TO SAY IS WHEN I AM DONE WITH LEARNING ALL THE PHASER THINGS I NEED TO KNOW FOR THE MVP, I WILL BE SUCCESSFULLY AND FULLY COMMITTED TO **Step 5: Creating a prototype**. JUST HOPE THE BEST FOR ME AND I'LL SEE YOU IN THE NEXT EPISODE!!! DON'T FORGET TO LIKE AND SUBSCRIBE
 
 
 [Previous](entry03.md) | [Next](entry05.md)
