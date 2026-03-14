@@ -148,6 +148,21 @@
                 this.physics.add.overlap(player1, coins, collectCoin, null, this);
                 // this.physics.add.overlap(player2, coins, collectCoin, null, this);
 
+                // death system
+                bombs = this.physics.add.group();
+                this.physics.add.collider(bombs, platforms);
+                {
+                    this.physics.pause();
+
+                    player.setTint(0xff0000);
+
+                    player.anims.play('turn');
+
+                    gameOver = true;
+                }
+                this.physics.add.collider(bombs, platforms);
+                this.physics.add.collider(player, bombs, hitBomb, null, this);
+
             }
 
 
