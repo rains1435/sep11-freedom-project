@@ -67,7 +67,8 @@ I sped through the 3rd step: **Brainstorm possible solutions** and sped through 
 ### Communication
 Since I have a partner for this team project, I've gotten WAY better with communicating. I tell my partner everything about my plan or he tells me what he is thinking about. I feel like without communication, it will be very hard to know what your partner needs or wants. For example, if my partner wants a very cool looking character but isn't communicating with me, I can't accommodate for him/her or figure something out. It's about creating a connection while also keeping it professional. It's like that one advice: "Communication is key" so for my future self, a team needs connections, not disconnection.
 
-### 
+### Time Management + Growth Mindset
+For some context before I begin explaining, I am currently under a lot of stress from the responsibility of school and other personal issues. Now do I really want to spiral deeper into the rabbit hole or do I want escape? It's not possible to escape it though... but I can relieve some stress to lift myself somewhat upwards. This is possible through managing my schedule for work and keeping a strong mindset. Remember how I talked about the adjustment I made on my MVP plan? Yeah I used time management to relieve stress and for me to do this is a sign that I am trying to grow a better mindset and not bury myself in deadline stress. New plan is to work at my own pace but not overly relaxed since there's an ACTUAL deadline. The new mindset I've built for myself is really helping me deal with all the other external stressors. The lesson is that like an equilibrium under stress, adjust until you reach equilibrium even if it might feel different (Chemistry reference).
 
 
 
