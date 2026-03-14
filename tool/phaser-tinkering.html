@@ -72,7 +72,7 @@
                 this.load.image('frog', 'assets/frog.jpg');
                 this.load.image('boy', 'assets/boy.jpg');
                 this.load.image('coins', 'assets/coins.jpg');
-                this.load.image('spikes', 'assets/spikes.jpg);
+                this.load.image('spikes', 'assets/spikes.jpg');
             }
 
             var player1;
@@ -82,6 +82,8 @@
             var coins;
             var score = 0;
             var scoreText;
+            var spikes;
+            var spikephy;
 
             function create ()
             {
@@ -150,8 +152,9 @@
                 // this.physics.add.overlap(player2, coins, collectCoin, null, this);
 
                 // death system
-                let spikes = this.physics.add.staticGroup();
-                let spike = spikes.create(400, 540, 'spikes');
+                spikephy = this.physics.add.staticGroup();
+                spikes = spikes.create(400, 540, 'spikes');
+                spike.setDisplaySize(800, 20).refreshBody();
                 this.physics.add.overlap(player1, spikes, function() {
                     player1.setPosition(350, 400);
                     score = 0;
