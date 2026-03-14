@@ -49,7 +49,7 @@ function create()
 * Created 2 global variables (necessary)
 * `spikes = this.physics.add.staticGroup();` makes it an immovable; not affected by gravity
 * `spikeCreate = spikes.create(200, 210, 'spikes');` creates a spike at a position
-* `this.physics.add.overlap(player1, spikes, function() { player1.setPosition(350, 400); score = 0; scoreText.setText('Score: 0'); }, null, this);` similar to the coins overlapping, it looks for when `player1` comes into contact with `spikes` vice versa. When it does happen, it runs a function to which `player1` respawns at original spawn position of `(350, 400)`, resetting user's score to 0. `null` and `this` are necessary to include; no explanation because I don't know much about it.
+* `this.physics.add.overlap(player1, spikes, function() { player1.setPosition(350, 400); score = 0; scoreText.setText('Score: 0'); }, null, this);` similar to the [**coins overlapping**](https://phaser.io/tutorials/making-your-first-phaser-3-game/part8#:~:text=this.physics.add.overlap(player%2C%20stars%2C%20collectStar%2C%20null%2C%20this)%3B), it looks for when `player1` comes into contact with `spikes` vice versa. When it does happen, it runs a function to which `player1` respawns at original spawn position of `(350, 400)`, resetting user's score to 0. `null` and `this` are necessary to include; no explanation because I don't know much about it.
 
 That's all the major things I've learned using Phaser! Thanks! now let's move on...
 
@@ -58,6 +58,8 @@ That's all the major things I've learned using Phaser! Thanks! now let's move on
 The score and death system are progress of MVP. Why? Just look at my long plan... Well I am not going to copy and paste it here so just click on this link -> [HERE](../../our-first-game/plan.md)
 
 I made one change to the plan and that is I am removing the dates of which we have to do each part of the MVP. Reason is that I AM VERY BUSY WITH SCHOOL. Setting these deadlines is putting more pressure on me and I don't want to stress about it constantly. New plan is that me and my partner Xin Yu will learn everything we need for the MVP based on the plan on our own time but NO PROCRASINATING. It seems like this plan is working better because I've already learned how to make a score and death system which meets 2 of our major game MVP parts.
+
+
 
 ## Engineering Design Process
 I sped through the 3rd step: **Brainstorm possible solutions** and sped through step 4: **Plan the most promising solution**. Currently, I can confidently say that we are in between step 4 and 5: **Create a prototype**. What this means is we are still planning/learning what we need to do to meet our MVP requirements but also 'creating' the prototype; I am testing things out behind the scenes with Phaser.
