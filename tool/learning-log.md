@@ -366,7 +366,28 @@ function create ()
     * `scoreText.setText('Score: ' + score);` will display the new score value after 10 points has been added (visual)
     * Also the coin disappears if collided with. Combined with the addition of scores, it will make the world less boring to the user!
 
+### 3/16/26
+* HAPPY LATE HALLOWEEN BECAUSE THE DEATH SYSTEM IS BEING ADDED!!!
+  * I tried following the Phaser tutorial on how to make a death system but it didn't work as I thought it would -> [**link to it**](https://phaser.io/tutorials/making-your-first-phaser-3-game/part10)
+  * SOOOO I MADE MY OWN VERSION THAT WORKED TO MY LIKING
+``` js
+var spikes;
+function create ()
+{
+    spikes = this.physics.add.staticGroup();
+    spikeCreate = spikes.create(200, 210, 'spikes');
+    spikeCreate.setScale(0.4).refreshBody();
+    this.physics.add.overlap(player1, spikes, function() {
+        player1.setPosition(350, 400);
+        score = 0;
+        scoreText.setText('Score: 0');
+    }, null, this);
+}
 
+```
+* Let me explain what I did:
+  * So I got this idea from the coin overlap code where if the sprite overlaps the coin, it runs a function and that function makes it disappear and be added to the score.
+  * First I had to make 
 
 <!--
 * Links you used today (websites, videos, etc)
