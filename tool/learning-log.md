@@ -387,7 +387,10 @@ function create ()
 ```
 * Let me explain what I did:
   * So I got this idea from the coin overlap code where if the sprite overlaps the coin, it runs a function and that function makes it disappear and be added to the score.
-  * First I had to make 
+  * First I had set up the static physics of the spike and create one at a certain position. Then I used the overlap physics to make the spike a "kill-respawn" entity.
+    * `player1, spikes` creates relationship between the sprite and the spike
+    * `function() { player1.setPosition(350, 400); score = 0; scoreText.setText('Score: 0');` runs when those two mentioned above overlap; respawns sprite at original spawn position and resets score to 0
+    * `null, this` are just necessary; no explanation for now because I don't know what it means yet
 
 <!--
 * Links you used today (websites, videos, etc)
