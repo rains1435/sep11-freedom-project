@@ -392,7 +392,7 @@ function create ()
     * `function() { player1.setPosition(350, 400); score = 0; scoreText.setText('Score: 0');` runs when those two mentioned above overlap; respawns sprite at original spawn position and resets score to 0
     * `null, this` are just necessary; no explanation for now because I don't know what it means yet
 
-### 3/23/26
+### 3/29/26
 * 
 
 
