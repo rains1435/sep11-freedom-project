@@ -393,7 +393,11 @@ function create ()
     * `null, this` are just necessary; no explanation for now because I don't know what it means yet
 
 ### 3/29/26
-* 
+* LEVELS LEVELS LEVELS!!! NOW THERE'S LEVEL SYSTEM WHICH MEANS DIFFERENT SCENES!!!
+  * Here's where I learned it from partially -> [**CLICK ME**](https://phaser.io/examples/v3.85.0/scenes/view/changing-scene-es6)
+``` js
+
+```
 
 
 
