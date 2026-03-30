@@ -55,163 +55,159 @@
                         debug: false
                     }
                 },
-
-                scene: {
-                    preload: preload,
-                    create: create,
-                    update: update
-                }
+                scene: [Level1, Level2]
             };
 
-            var game = new Phaser.Game(config);
+            const game = new Phaser.Game(config);
 
-            function preload ()
-            {
-                this.load.image('sky', 'assets/sky.jpg');
-                this.load.image('ground', 'assets/ground.jpg');
-                this.load.image('frog', 'assets/frog.jpg');
-                this.load.image('boy', 'assets/boy.jpg');
-                this.load.image('coins', 'assets/coins.jpg');
-                this.load.image('spikes', 'assets/spikes.jpg');
-            }
-
-            var player1;
-            var player2;
-            var cursors;
-            var wasdKey;
-            var coins;
-            var score = 0;
-            var scoreText;
-            var spikes;
-            var spikeCreate;
-
-            function create ()
-            {
-                // background
-                let sky = this.add.image(400, 300, 'sky');
-                sky.setDisplaySize(800, 600);
-
-                // platforms
-                let platforms = this.physics.add.staticGroup();
-
-                let floor = platforms.create(400, 568, 'ground').refreshBody();
-                floor.setDisplaySize(800, 100);
-
-                function ground (x,y) {
-                    return platforms.create(x, y, 'ground')
-                        .setDisplaySize(300,50)
-                        .refreshBody();
+            
+                function preload ()
+                {
+                    this.load.image('sky', 'assets/sky.jpg');
+                    this.load.image('ground', 'assets/ground.jpg');
+                    this.load.image('frog', 'assets/frog.jpg');
+                    this.load.image('boy', 'assets/boy.jpg');
+                    this.load.image('coins', 'assets/coins.jpg');
+                    this.load.image('spikes', 'assets/spikes.jpg');
                 }
 
-                ground(650, 400);
-                ground(150, 250);
-                ground(700, 170);
+                var player1;
+                var player2;
+                var cursors;
+                var wasdKey;
+                var coins;
+                var score = 0;
+                var scoreText;
+                var spikes;
+                var spikeCreate;
 
-                // character (sprite)
-                // frog (player1)
-                player1 = this.physics.add.sprite(350, 400, 'frog');
-                player1.setScale(0.07).setBounce(0.2).setCollideWorldBounds(true);
-                this.physics.add.collider(player1, platforms);
+                function create ()
+                {
+                    // background
+                    let sky = this.add.image(400, 300, 'sky');
+                    sky.setDisplaySize(800, 600);
 
-                // boy (player2)
-                /*
-                player2 = this.physics.add.sprite(250, 400, 'boy');
-                player2.setScale(0.2).setBounce(0.2).setCollideWorldBounds(true);
-                this.physics.add.collider(player2, platforms);
-                */
+                    // platforms
+                    let platforms = this.physics.add.staticGroup();
 
-                // coins (collectable) / score system
-                coins = this.physics.add.group({
-                });
-                function coinsSpawn(x, y, count, spacing){
-                    for(var i = 0; i < count; i++){
-                        coins.create(x + i*spacing, y, 'coins' );
+                    let floor = platforms.create(400, 568, 'ground').refreshBody();
+                    floor.setDisplaySize(800, 100);
+
+                    function ground (x,y) {
+                        return platforms.create(x, y, 'ground')
+                            .setDisplaySize(300,50)
+                            .refreshBody();
                     }
+
+                    ground(650, 400);
+                    ground(150, 250);
+                    ground(700, 170);
+
+                    // character (sprite)
+                    // frog (player1)
+                    player1 = this.physics.add.sprite(350, 400, 'frog');
+                    player1.setScale(0.07).setBounce(0.2).setCollideWorldBounds(true);
+                    this.physics.add.collider(player1, platforms);
+
+                    // boy (player2)
+                    /*
+                    player2 = this.physics.add.sprite(250, 400, 'boy');
+                    player2.setScale(0.2).setBounce(0.2).setCollideWorldBounds(true);
+                    this.physics.add.collider(player2, platforms);
+                    */
+
+                    // coins (collectable) / score system
+                    coins = this.physics.add.group({
+                    });
+                    function coinsSpawn(x, y, count, spacing){
+                        for(var i = 0; i < count; i++){
+                            coins.create(x + i*spacing, y, 'coins' );
+                        }
+                    }
+                    coinsSpawn(20, 210, 6, 50);
+                    coinsSpawn(530, 360, 6, 50);
+                    coinsSpawn(580, 130, 5, 50);
+                    coins.children.iterate(function (child) {
+                        child.setScale(0.1);
+                    });
+
+
+
+                    scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
+
+                    function collectCoin (player1, coins)
+                    {
+                        coins.disableBody(true, true);
+
+                        score += 10;
+                        scoreText.setText('Score: ' + score);
+                    }
+
+                    this.physics.add.collider(coins, platforms);
+                    this.physics.add.overlap(player1, coins, collectCoin, null, this);
+                    // this.physics.add.overlap(player2, coins, collectCoin, null, this);
+
+                    // death system
+                    spikes = this.physics.add.staticGroup();
+                    spikeCreate = spikes.create(200, 210, 'spikes');
+                    spikeCreate.setScale(0.4).refreshBody();
+                    this.physics.add.overlap(player1, spikes, function() {
+                        player1.setPosition(350, 400);
+                        score = 0;
+                        scoreText.setText('Score: 0');
+                    }, null, this);
                 }
-                coinsSpawn(20, 210, 6, 50);
-                coinsSpawn(530, 360, 6, 50);
-                coinsSpawn(580, 130, 5, 50);
-                coins.children.iterate(function (child) {
-                    child.setScale(0.1);
-                });
 
 
 
-                scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
-
-                function collectCoin (player1, coins)
+                function update ()
                 {
-                    coins.disableBody(true, true);
+                    // arrow keys movement (frog,player1)
+                    cursors = this.input.keyboard.createCursorKeys();
+                    if (cursors.left.isDown)
+                    {
+                        player1.setVelocityX(-160);
+                    }
+                    else if (cursors.right.isDown)
+                    {
+                        player1.setVelocityX(160);
+                    }
+                    else
+                    {
+                        player1.setVelocityX(0);
+                    }
 
-                    score += 10;
-                    scoreText.setText('Score: ' + score);
-                }
+                    if (cursors.up.isDown && player1.body.touching.down)
+                    {
+                        player1.setVelocityY(-330);
+                    }
+                    // WASD keys movement (boy,player2)
+                    /*
+                    wasdKey = this.input.keyboard.addKeys({
+                        up: 'W',
+                        down: 'S',
+                        right: 'D',
+                        left: 'A'
+                    });
+                    if (wasdKey.left.isDown)
+                    {
+                        player2.setVelocityX(-160);
+                    }
+                    else if (wasdKey.right.isDown)
+                    {
+                        player2.setVelocityX(160);
+                    }
+                    else
+                    {
+                        player2.setVelocityX(0);
+                    }
 
-                this.physics.add.collider(coins, platforms);
-                this.physics.add.overlap(player1, coins, collectCoin, null, this);
-                // this.physics.add.overlap(player2, coins, collectCoin, null, this);
-
-                // death system
-                spikes = this.physics.add.staticGroup();
-                spikeCreate = spikes.create(200, 210, 'spikes');
-                spikeCreate.setScale(0.4).refreshBody();
-                this.physics.add.overlap(player1, spikes, function() {
-                    player1.setPosition(350, 400);
-                    score = 0;
-                    scoreText.setText('Score: 0');
-                }, null, this);
-            }
-
-
-
-            function update ()
-            {
-                // arrow keys movement (frog,player1)
-                cursors = this.input.keyboard.createCursorKeys();
-                if (cursors.left.isDown)
-                {
-                    player1.setVelocityX(-160);
+                    if (wasdKey.up.isDown && player2.body.touching.down)
+                    {
+                        player2.setVelocityY(-330);
+                    }
+                    */
                 }
-                else if (cursors.right.isDown)
-                {
-                    player1.setVelocityX(160);
-                }
-                else
-                {
-                    player1.setVelocityX(0);
-                }
-
-                if (cursors.up.isDown && player1.body.touching.down)
-                {
-                    player1.setVelocityY(-330);
-                }
-                // WASD keys movement (boy,player2)
-                /*
-                wasdKey = this.input.keyboard.addKeys({
-                    up: 'W',
-                    down: 'S',
-                    right: 'D',
-                    left: 'A'
-                });
-                if (wasdKey.left.isDown)
-                {
-                    player2.setVelocityX(-160);
-                }
-                else if (wasdKey.right.isDown)
-                {
-                    player2.setVelocityX(160);
-                }
-                else
-                {
-                    player2.setVelocityX(0);
-                }
-
-                if (wasdKey.up.isDown && player2.body.touching.down)
-                {
-                    player2.setVelocityY(-330);
-                }
-                */
-            }
         </script>
     </body>
 </html>
