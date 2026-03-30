@@ -74,8 +74,8 @@
                 constructor() {
                     super('Level1');
                 }
-                
-                function preload ()
+
+                preload ()
                 {
                     this.load.image('sky', 'assets/sky.jpg');
                     this.load.image('ground', 'assets/ground.jpg');
@@ -85,7 +85,7 @@
                     this.load.image('spikes', 'assets/spikes.jpg');
                 }
 
-                function create ()
+                create ()
                 {
                     // background
                     let sky = this.add.image(400, 300, 'sky');
@@ -164,7 +164,7 @@
 
 
 
-                function update ()
+                update ()
                 {
                     // arrow keys movement (frog,player1)
                     cursors = this.input.keyboard.createCursorKeys();
