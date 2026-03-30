@@ -456,7 +456,8 @@ var config = {
 const game = new Phaser.Game(config);
 ```
 
-* THIS LOOKS LONG BUT TRUST ME, IT'S JUST REORGANIZING A LOT OF THINGS I LEARNE
+* THIS LOOKS LONG BUT TRUST ME, IT'S JUST REORGANIZING A LOT OF CODE I WROTE.
+* I'll now explain each section
 
 
 
