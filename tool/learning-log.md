@@ -396,8 +396,67 @@ function create ()
 * LEVELS LEVELS LEVELS!!! NOW THERE'S LEVEL SYSTEM WHICH MEANS DIFFERENT SCENES!!!
   * Here's where I learned it from partially -> [**CLICK ME**](https://phaser.io/examples/v3.85.0/scenes/view/changing-scene-es6)
 ``` js
+// NOTE: all the variables go outside of the level classes
 
+class Level1 extends Phaser.Scene {
+    constructor() {
+        super('Level1');
+    }
+
+    preload() {
+
+    }
+
+    create() {
+
+    }
+
+    update() {
+
+    }
+}
+
+class Level2 extends Phaser.Scene {
+    constructor() {
+        super('Level2');
+    }
+
+    preload() {
+
+    }
+
+    create() {
+
+    }
+
+    update() {
+
+    }
+}
+
+// config and game go LAST
+var config = {
+    type: Phaser.AUTO,
+    scale: {
+        mode: Phaser.Scale.FIT,
+        parent: 'game-container',
+        width: 800,
+        height: 600,
+    },
+    physics: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 300 },
+            debug: false
+        }
+    },
+    scene: [Level1, Level2]
+};
+
+const game = new Phaser.Game(config);
 ```
+
+* THIS LOOKS LONG BUT TRUST ME, IT'S JUST REORGANIZING A LOT OF THINGS I LEARNE
 
 
 
