@@ -398,6 +398,7 @@ function create ()
 ``` js
 // NOTE: all the variables go outside of the level classes
 
+// levels
 class Level1 extends Phaser.Scene {
     constructor() {
         super('Level1');
@@ -458,6 +459,10 @@ const game = new Phaser.Game(config);
 
 * THIS LOOKS LONG BUT TRUST ME, IT'S JUST REORGANIZING A LOT OF CODE I WROTE.
 * I'll now explain each section
+  * Variables will still be global for the time being until something happens. This is because I need to use it multiple levels and it's much easier to access if it exist globally than locally.
+  * Notice how the `config` and `game` variables are the only variables at the bottom (before levels it was at the top). If left at the top, Phaser will read the `config/game` and be like: "What in the world is `Level1` and `Level2`?". So it's better to leave it at the bottom.
+  * Levels come before the `config` and `game` variables so that phaser will at least see the levels first and then the `config/game` would make sense to them. Levels will have the functions `preload, create, update` but without the function to define it. Those three are already defined inside the level class. Also `constructor` and `super()` are just necessary and I don't know how to explain it but if you want levels, include them or else scene won't load.
+
 
 
 
