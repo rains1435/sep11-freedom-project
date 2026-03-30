@@ -60,7 +60,21 @@
 
             const game = new Phaser.Game(config);
 
-            
+            var player1;
+            var player2;
+            var cursors;
+            var wasdKey;
+            var coins;
+            var score = 0;
+            var scoreText;
+            var spikes;
+            var spikeCreate;
+
+            class Level1 extends Phaser.Scene {
+                constructor() {
+                    super('Level1');
+                }
+                
                 function preload ()
                 {
                     this.load.image('sky', 'assets/sky.jpg');
@@ -70,16 +84,6 @@
                     this.load.image('coins', 'assets/coins.jpg');
                     this.load.image('spikes', 'assets/spikes.jpg');
                 }
-
-                var player1;
-                var player2;
-                var cursors;
-                var wasdKey;
-                var coins;
-                var score = 0;
-                var scoreText;
-                var spikes;
-                var spikeCreate;
 
                 function create ()
                 {
@@ -208,6 +212,7 @@
                     }
                     */
                 }
+            }
         </script>
     </body>
 </html>
