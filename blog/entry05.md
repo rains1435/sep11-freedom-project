@@ -182,6 +182,12 @@ It basically told me that whenever your player "dies", it will run some event wh
 
 ## Engineering Design Process
 
+Me and my partner Xin Yu have officially finished **Step 5: Create a Prototype**. Now, we're on Steps 6-7 which is basically the Beyond MVP part of this freedom project. We'll need to test out the game for any bugs or mistakes and **improve as needed**.
+
+## Skills
+
+### 
+
 
 
 
