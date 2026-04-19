@@ -189,10 +189,12 @@ Me and my partner Xin Yu have officially finished **Step 5: Create a Prototype**
 ### Leadership
 I don't want to take all the credit but I was kind of the reason why we were able to finish the project. I came up with the plans on how the MVP should be mostly and the "learn everything first" plan. It seems like my leadership and instructing worked out well and something new I've learned is that leadership comes and goes for me. Sometimes I like to let the other person do the work because I'm not that knowledgable on the topic. Whenever I do take leadership, I usually have a confident perspective of the I am doing. Although I didn't communicate like a leader should (I didn't tell my partner that I was going to be busy during the spring break), I guided us through the time crunch of doing it the day before the due date and we got through it.
 
-###
+### Growth Mindset
+Going into the making of this MVP, I was fairly sure that it was going to be a breeze if everything was managed correctly. Of course I had to be busy during spring break but you know, everything happens for a reason. Anyways, I didn't stress when it was the day before dues and I acted like it was going to be an usual workday. My mindset was to move on whenever there was a merge conflict, error, or confusion because I wanted to peservere, I wanted the project to be done. When there was a struggle, I simply asked for help and if my partner didn't know how to resolve the issue, I asked AI for assistance. Patience is ultimately what got me through as working with a partner and the code being so long (syntax errors or maybe a missing parenthesis can be so hard to find) can make my old-self go crazy. However, this time the mindset just naturally entered the room and without any self-resistance, it sat down and took over (It's like I was COMPLETELY in control of my ADHD). Overall, Growth Mindset helped significantly!
 
 
-
+## Next Step
+The school year is coming to an end and I've already made my MVP that works and functions well. The Next Step is literally just adding extra features to make the game look good and visually appealing (Beyond MVP). This game is going to look good, trust me.
 
 [Previous](entry04.md) | [Next](entry06.md)
 
