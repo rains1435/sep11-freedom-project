@@ -109,6 +109,7 @@ this.physics.add.overlap(player1, portal, function() {
 * At the instant the player touches the portal, they teleport to level 2! *"But Rain, what actually happens???"*
 * `.overlap` physics comes in as the main character for doing figuring out these player to object interactions (clap it up for them!). The system reads that the player has overlapped with the portal, vice versa and what it does is it runs a special function. That special function is that if the player HAS COLLECTED all the coins and their scores match that value after all coins collected, it will RESET EVERYTHING YOU HAVE ON YOU and alerts you with a message that you're moving onto the next level (and you teleport because of `this.scene.start('Ending');` -> stops the current scene to teleport you to the target scene -> [Learn More](https://docs.phaser.io/phaser/concepts/scenes#start)).
 
+![portal](ss/fifth.png)
 
 
 ## COMPLETED MVP VERSION OF OUR GAME
@@ -180,6 +181,8 @@ It basically told me that whenever your player "dies", it will run some event wh
 ---
 
 ## Engineering Design Process
+
+
 
 
 [Previous](entry04.md) | [Next](entry06.md)
