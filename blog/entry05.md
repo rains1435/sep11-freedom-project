@@ -186,7 +186,8 @@ Me and my partner Xin Yu have officially finished **Step 5: Create a Prototype**
 
 ## Skills
 
-### 
+### Leadership
+I don't want to take all the credit but I was kind of the reason why we were able to finish the project. I came up with the plans on how the MVP should be mostly and the "learn everything first" plan. It seems like my leadership and instructing worked out well and something new I've learned is that leadership comes and goes for me. Sometimes I like to let the other person do the work because I'm not that 
 
 
 
