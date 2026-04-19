@@ -175,6 +175,9 @@ this.time.addEvent({
 It basically told me that whenever your player "dies", it will run some event where the whole scene pauses for a 500ms (you get to see the death frame), then the system reads what's inside the `callback: function(){}` (`callbackScope: this` is necessary because it tells `this.scene.restart();` what scene to restart). Scene restarts after the 500ms is over. An analogy that I got from it was imagine the `delay` as the calming of a storm (pauses the scene to prevent double trigger of death hitbox), the `callback` being a note with a little label (`callbackScope: this`) on what world (scene) to restart specifically.
 
 
+---
+
+## Engineering Design Process
 
 
 [Previous](entry04.md) | [Next](entry06.md)
