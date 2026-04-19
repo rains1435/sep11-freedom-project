@@ -119,7 +119,7 @@ Previously in [Blog 4](entry04.md), I said that we will learn everything first b
 
 Issue was that I was busy during spring break and so although Xin Yu and me were able to set up the Death System, Textures, and Basic Mechanics of the game, it was due to my absence during most of the spring break that we had to do it the day before. So the day before the due date (4/12/26), we called and decided to finish the majority of the game in 7 hours I believe. I thought we weren't going to finish but you know what the surprise was? WE FINISHED IT JUST IN TIME!!! You may ask us how? It's because the plan we stuck with worked out. We knew all the code necessary for the game and THANKFULLY, we have a MVP plan so we weren't stuck.
 
-### What tools did we use?
+### What external tools did we use?
 
 I'll be 100% transparent here because a guy always have ways of doing things. I googled a lot on how to make key systems and things of that sort. I found some great documentations (Some of the linked words link to documentations I found on google!).  However, it would've been impossible with the use of AI. Remember how the due date was literally "tommorow"? Yeah WE HAD THE KNOWLEDGE but WE AREN'T PERFECT ALRIGHT? We had errors along the way so we needed AI to debug them for us (**WE USED GOOGLE OVERVIEW AI WHICH WAS A BAD OPTION BUT THAT'S ALL WE HAD**). Sometimes the error would so tiny that it would take us 10 minutes if we actually went to look for it. GOOGLE AI OVERVIEW wasn't the best because it kept giving us wrong recommendations and there's a text limit apparently so we had to copy and paste chunk by chunk.
 
