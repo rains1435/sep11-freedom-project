@@ -17,7 +17,11 @@ I feel like this year's Pitch was a little bit worse than last years... but I do
 ---
 
 ## Engineering Design Process
-I mean we're basically done 
+I mean we're basically done... the Elevator Pitch was LITERALLY Step 8: **Communicate the results** because we showed people our games and allowed them to try it (Of course they gave positive feedback but some didn't like the difficulty of the last level which is understandable as this game is MEANT TO BE HARD). I wish there was more but yeah, we're FINISHED FOR THE YEAR!!!
+
+## Skills
+
+###
 
 [Previous](entry05.md) | [Next](entry07.md)
 
