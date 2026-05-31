@@ -21,7 +21,14 @@ I mean we're basically done... the Elevator Pitch was LITERALLY Step 8: **Commun
 
 ## Skills
 
-###
+### Communication
+Self-explanatory and yeah it's true, I've improved a lot with public speaking in terms of not using filler words nor extending the takeaway part of the in-class presentation to sound like I'm some new 21st century contemporary philosopher that just found how to sound as cliche as possible without sounding cliche. Anyways, I like how I had a partner this year and it definitely made the presentation easier and helped me present a bit better as I had a cooldown and less to say. Elevator Pitch... I was speaking like I'm freestyle rapping to some random beat the judges chose for me. I was like this and that with the topping and the cream on the side etc etc. Yeah there was a lot to showcase surprisingly but I executed that with ease (I spoke clearly and quickly, a skill only the real ones have).
+
+### Leadership
+Behind the scenes, I was kind of leading the team in terms of preparing for presentations and the elevator pitch (my partner also took some part of the lead but it was majority me). I communicated with him on what to do when the judges came to our table for the pitch; I told him that I will be speaking/describing the showcase of the game to which he will be the controller of the game. Why? I realized that he was stuttering a lot and even though I wanted him to speak, we had to make a quick decision and I decided to speak. Good idea because like I said, I was speaking with coherency and speed (no offense to my partner as he also did his part with near perfection).
+
+## Next Step
+Well I don't know if there's a step after the 8th one but if there is, 
 
 [Previous](entry05.md) | [Next](entry07.md)
 
