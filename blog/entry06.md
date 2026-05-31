@@ -28,7 +28,7 @@ Self-explanatory and yeah it's true, I've improved a lot with public speaking in
 Behind the scenes, I was kind of leading the team in terms of preparing for presentations and the elevator pitch (my partner also took some part of the lead but it was majority me). I communicated with him on what to do when the judges came to our table for the pitch; I told him that I will be speaking/describing the showcase of the game to which he will be the controller of the game. Why? I realized that he was stuttering a lot and even though I wanted him to speak, we had to make a quick decision and I decided to speak. Good idea because like I said, I was speaking with coherency and speed (no offense to my partner as he also did his part with near perfection).
 
 ## Next Step
-Well I don't know if there's a step after the 8th one but if there is, 
+Well I don't know if there's a step after the 8th one but if there is, that's up to Mr. Mueller. Anyways I want to say that this school year went by pretty quick and now I'm already writing my last blog which is sad (I know many who read this will miss my blogs). Last words before I leave is that I hope I inspired some people and I want to thank Mr. Mueller for being such an amazing teacher! GOODBYE AND SEE YOU IN THE FALL!
 
 [Previous](entry05.md) | [Next](entry07.md)
 
