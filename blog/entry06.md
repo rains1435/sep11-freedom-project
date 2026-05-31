@@ -9,7 +9,10 @@ WAYYYYY EASIER THAN LAST YEAR'S IN-CLASS PARTLY BECAUSE I HAVE A PARTNER AND I D
 
 Here's our presentation plan -> [**Click me**](../../our-first-game/presentation.md)
 
-Here's our amazingly crafted slides -> [**Click me**]()
+Here's our amazingly crafted slides -> [**Click me**](https://docs.google.com/presentation/d/1kXB_q91q4sR2KUdTuQarDFnusky3TqUpdf3cI6WprTs/edit?usp=sharing)
+
+### Elevator Pitch
+I feel like this year's Pitch was a little bit worse than last years... but
 
 [Previous](entry05.md) | [Next](entry07.md)
 
