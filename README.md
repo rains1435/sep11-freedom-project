@@ -14,9 +14,20 @@ For my project, I chose to study **Phaser** in order to help me make **a difficu
 
 ## Implications
 ##### PROS
-*
+* Fun little game to play if you want challenge
+* Helps with Boredom
+* Riddles to add an extra level of difficulty to it
+* Helps improve dexterity
+* Works on growing your patience
+* Due to its difficulty, winning might make someone feel good
+
 ##### CONS
-*
+* Difficult game
+* Can cause frustration
+* Not meant for everybody as people see fun in different ways
+* Can get repetitive
+* Replay rates may be low
+* Non-accessible to mobile; only desktop and laptop (requires keyboard)
 
 
 ## Blog
