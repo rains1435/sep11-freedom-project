@@ -12,7 +12,9 @@ Here's our presentation plan -> [**Click me**](../../our-first-game/presentation
 Here's our amazingly crafted slides -> [**Click me**](https://docs.google.com/presentation/d/1kXB_q91q4sR2KUdTuQarDFnusky3TqUpdf3cI6WprTs/edit?usp=sharing)
 
 ### Elevator Pitch
-I feel like this year's Pitch was a little bit worse than last years... but
+I feel like this year's Pitch was a little bit worse than last years... but I don't mind that because we made a game this year as our freedom project and there wasn't MUCH to say other than to showcase our game and explain the mechanics, the single purpose, and takeaways. Last year, I definitely had more to say and it was easier to develop a hook. What do I think I can work on better by looking at SEP11 Elevator Pitch... hmmm... I should've showed them our last level (HARDEST LEVEL) which is basically the whole point of our game: A Hard/Challenging Platformer game... but me and my partner Xin Yu forgot mainly because I rushed through it due to the minute limit. Main takeaway of this pitch is to be prepared. Nevertheless, people who weren't the judges enjoyed trying out our game and I got 3 students hooked onto trying to beat the last level since they didn't want to accept defeat. Overall, a great Elevator Pitch and I'm not going to be upset if our project doesn't get picked for the Final Showcase; There were better projects than ours and I already was picked as finalist last year.
+
+EDP 
 
 [Previous](entry05.md) | [Next](entry07.md)
 
