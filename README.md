@@ -10,7 +10,7 @@ For my project, I chose to study **Phaser** in order to help me make **a difficu
 
 [Product](https://rains1435.github.io/our-first-game/)
 
-[Presentation]()
+[Presentation](https://docs.google.com/presentation/d/1kXB_q91q4sR2KUdTuQarDFnusky3TqUpdf3cI6WprTs/edit?usp=sharing)
 
 ## Implications
 ##### PROS
